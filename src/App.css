@@ -1,4 +1,24 @@
 .App {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+  padding: 2em;
+  margin-bottom: 2em;
+  background-color: rgb(190, 45, 26);
+  color: #fff;
+  border: 1px solid black;
+}
+
+.visually-hidden {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em;
+  margin: 300px;
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +55,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
