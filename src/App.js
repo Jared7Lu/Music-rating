@@ -1,6 +1,5 @@
 import React from 'react'
 import './App.css'
-import Search from './components/search';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, InputGroup, Card, FormControl, Row, Button} from 'react-bootstrap';
 import {useState, useEffect} from 'react';
@@ -29,7 +28,6 @@ function App() {
 
   //Search Bar
   async function search() {
-    console.log("You are Discovering " + searchInput);
 
     //Get data from Spotify
     var searchPara = {
@@ -44,18 +42,14 @@ function App() {
     .then(response => response.json())
     .then(data => { return data.artists.items[0].id })
 
-    console.log("artist id is" + artistID);
-
     //get artist
     var returnedAlbums = await fetch('https://api.spotify.com/v1/artists/' + artistID + '/albums' + '?include_groups=album&market=US&limit=50', searchPara)
     .then(response => response.json())
     .then(data => {
-      console.log(data);
       setAlbums(data.items);
     })
-console.log(albums);
-    //What to show from data
   }
+  
   return (
     <div className="App">
       <Container>
