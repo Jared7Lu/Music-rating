@@ -83,3 +83,12 @@ function App() {
 }
 
 export default App;
+
+//will need for routes
+ 
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import layout from "./pages/layout";
+// import home from "./pages/home";
+// import notFound from "./pages/page-not-found";
+// import songs from "./pages/song-comments";
+// import ReactDOM from "react-dom";
