@@ -7,7 +7,7 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 function Comment(){
   return (
   <div>
-    <Form>
+    <Form action="" method="POST" >
       <Row>
         <Col className="col-md-2">
         <FloatingLabel controlId="floatingInput" label="UserName" className="mb-3">
